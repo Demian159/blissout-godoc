@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <title></title>
+</head>
+<body id="index">
+  <div class="container-fluid">
+    <!-- Header -->
+    <header class="row align-items-center justify-content-between">
+      <div class="col-2 offset-1 logo">
+        <img src="http://placehold.it/100x100" alt="" class="img-fluid">
+      </div>
+      <div class="col-auto mr-lg-5 navMenu">
+        <nav class="mr-md-5">
+          <a class="btn btn-outline-secondary" href="#">Soy Prestador</a>
+          <a class="btn btn-dark" href="#">Iniciar Sesión</a>
+          <a class="btn btn-outline-secondary" href="#">Registro</a>
+          <a class="mr-smd5 btn btn-outline-secondary" href="#">Ayuda</a>
+        </nav>
+      </div>
+    </header>
+    <!-- Main -->
+    <main class="ro2">
+      <!-- Search Menu -->
+      <section id="searchMenu" class="row">
+        <div class="searchImgContainer ml-auto col-auto">
+          <img src="http://placehold.it/600x700/FFFFFF" alt="" class="searchImg">
+        </div>
+        <div class="searchContent offset-1 col-7">
+          <div class="row h1Container">
+            <h1 class="h1 col-8">Encuentra un especialista en tu ciudad y solicita turno</h1>
+          </div>
+          <div class="row">
+            <div class="col-auto">
+              <label for="specialityButton">Especialidad</label><br>
+              <button class="dropdownButton btn btn-outline-secondary btn-lg dropdown-toggle d-flex align-items-center justify-content-between" type="button" id="specialityButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span>ej. Odontólogo</span> <ion-icon name="chevron-down-outline"></ion-icon>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Odontologo</a>
+                <a class="dropdown-item" href="#">Pediatra</a>
+                <a class="dropdown-item" href="#">Dentista</a>
+              </div>
+            </div>
+            <div class="col-auto">
+              <label for="cityButton">Ciudad</label><br>
+              <button class="dropdownButton btn btn-outline-secondary btn-lg dropdown-toggle d-flex align-items-center justify-content-between" type="button" id="cityButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span>ej. Buenos Aires</span> <ion-icon name="chevron-down-outline"></ion-icon>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Mendoza</a>
+                <a class="dropdown-item" href="#">Buenos Aires</a>
+                <a class="dropdown-item" href="#">Cordoba</a>
+              </div>
+            </div>
+            <div class="searchButton col-auto d-flex">
+              <button type="button" name="search" class="btn btn-success btn-lg align-self-end px-5 " aria-haspopup="true" aria-expanded="false">
+                Buscar
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- How it works -->
+      <section id="howItWorks" class="row">
+        <div class="offset-1 col-auto">
+          <h2 class="h2">Cómo funciona</h2>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+      </section>
+      <!-- Stories 1 -->
+      <section id="stories1" class="row justify-content-center">
+        <div class="storiesHeaderContainer offset-1 col-11 mb-5">
+          <h2 class="h2">Historias de Especialistas en GoDoc!</h2>
+        </div>
+        <div class="storiesDeck d-flex justify-content-between col-10 row">
+          <div class="storyCard d-flex">
+            <ul class="ml-5 align-self-end">
+              <h4 class="h4">Patricia Martinez</h4>
+              <h3 class="h3">Alergista</h3>
+              <a href="#"><ion-icon name="play-circle-outline"></ion-icon></a>
+            </ul>
+          </div>
+          <div class="storyCard d-flex">
+            <ul class="ml-5 align-self-end">
+              <h4 class="h4">Patricia Martinez</h4>
+              <h3 class="h3">Alergista</h3>
+              <a href="#"><ion-icon name="play-circle-outline"></ion-icon></a>
+            </ul>
+          </div>
+          <div class="storyCard d-flex">
+            <ul class="ml-5 align-self-end">
+              <h4 class="h4">Patricia Martinez</h4>
+              <h3 class="h3">Alergista</h3>
+              <a href="#"><ion-icon name="play-circle-outline"></ion-icon></a>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Stories 2 -->
+      <section id="stories2" class="row">
+        <div class="storiesHeaderContainer offset-1 col-11 mb-5">
+          <h2 class="h2">Historias de Especialistas en GoDoc!</h2>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <hr>
+      <div class="row footerNavContainer justify-content-between">
+        <nav class="offset-1 col-2 d-flex flex-column">
+          <h4 class="h4">Go Doc</h4>
+          <a href="#">Qué hacemos</a>
+          <a href="#">Novedades</a>
+          <a href="#">Confianza y seguridad</a>
+          <a href="#">Normas de la comunidad</a>
+        </nav>
+        <nav class="col-2 d-flex flex-column">
+          <h4 class="h4">Servicios</h4>
+          <a href="#">Pacientes</a>
+          <a href="#">Prestadores</a>
+          <a href="#">Beneficios Premium</a>
+          <a href="#">Publicidad</a>
+        </nav>
+        <nav class="col-2 d-flex flex-column">
+          <h4 class="h4">Ayuda</h4>
+          <a href="#">Cómo funciona</a>
+          <a href="#">Soporte</a>
+          <a href="#">Preguntas Frecuentes</a>
+          <a href="#">Contacto</a>
+        </nav>
+        <nav class="col-3 d-flex flex-column">
+          <h4 class="h4">Redes</h4>
+          <a href="#">Qué hacemos</a>
+          <a href="#">Novedades</a>
+          <a href="#">Confianza y seguridad</a>
+          <a href="#">Normas de la comunidad</a>
+        </nav>
+      </div>
+    </footer>
+  </div>
+  <div class="script">
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </div>
+</body>
+</html>

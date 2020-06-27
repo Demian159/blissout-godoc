@@ -1,0 +1,172 @@
+/* NOTAS
+COLORES:
+blanco oscuro #fafaf9
+violeta claro #7E4FFF
+verde logo #7BF4D9
+verde buscar #2ed9b3
+violeta oscuro #573CBA
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  text-decoration: none;
+  color: black;
+}
+a:visited{
+  text-decoration: none;
+  color: black;
+}
+a:active{
+  text-decoration: none;
+  color: black;
+}
+header{
+  position: relative;
+  background-color: #fff;
+  box-shadow: -2px -3px 5px #d1d1d1, 2px 3px 5px #d1d1d1;
+  height: 12vh;
+  z-index: 2;
+}
+header .navMenu nav a{
+  font-weight: 500;
+}
+header .navMenu nav a:nth-child(2){
+  transform: scale(1.1);
+}
+.btn{
+  padding-left: 2em;
+  padding-right: 2em;
+}
+header .btn-outline-secondary{
+  border: none;
+}
+.btn-outline-secondary:hover{
+  color: #fff;
+  background-color: #7E4FFF;
+  border-color: #7E4FFF;
+}
+.btn-dark{
+  color: #fff;
+  background-color: #7E4FFF;
+  border-color: #7E4FFF;
+}
+.btn-dark:visited{
+  color: #fff;
+}
+.btn-dark:hover{
+  background-color: #573CBA;
+  border-color: #573CBA;
+}
+.btn-success {
+  background-color: #2ed9b3;
+  border-color: #2ed9b3;
+}
+.btn-success:hover{
+  color: #7E4FFF;
+  background-color: #7BF4D9;
+  border-color: #7E4FFF;
+}
+#index h2{
+  margin-top: 15vh;
+}
+.h1Container{
+  margin-bottom: 1.5em;
+}
+.h1 {
+  color: #7E4FFF;
+  font-weight: bold;
+  font-size: 2.6em;
+}
+#searchMenu{
+  height: 72.2vh;
+  background-color: #fafaf9;
+}
+.searchContent{
+  position: absolute;
+  top: 35vh;
+}
+.searchContent label{
+  font-size: 1.2em;
+}
+.searchContent .btn-outline-secondary{
+  color: #7E4FFF80;
+  background-color: #fff;
+  border-color: LightGray;
+  padding-left: 0.3em;
+  padding-right: 0;
+}
+.searchContent .btn-outline-secondary:hover{
+  color: #fff;
+  background-color: #7E4FFF;
+  border-color: #7E4FFF;
+}
+
+.searchContent .btn-outline-secondary ion-icon{
+  color: #2ed9b3;
+  font-size: 1.8em;
+  padding-left: 6em;
+}
+.searchButton button{
+  padding: 0.6em 200em;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+.backgroundSearchMenu{
+  z-index: -2;
+  position: absolute;
+}
+#howItWorks{
+  height: 72.2vh;
+}
+#stories1{
+  height: auto;
+  background-color: #fafaf9;
+}
+.storiesDeck{
+  margin-bottom: 15vh;
+}
+.storyCard{
+  width: 31.5%;
+  background-image: url("http://placehold.it/400x600");
+  background-repeat: cover;
+  height: 70vh;
+  border-radius: 30px;
+}
+.storyCard ion-icon{
+  font-size: 4em;
+}
+.storyCard ul{
+  margin-bottom: 15%;
+}
+#stories2{
+  height: auto;
+  background-color: #fff;
+}
+footer hr{
+  display: block;
+  height: 1px;
+  border: 0;
+  width: 83%;
+  margin: 0 auto;
+  padding: 0;
+  border-top: 1px solid LightGray;
+}
+footer nav{
+  margin-top: 5vh;
+  margin-bottom: 25vh;
+}
+footer nav a{
+  margin-bottom: 2vh;
+}
+footer nav .h4{
+  margin-bottom: 3vh;
+}
