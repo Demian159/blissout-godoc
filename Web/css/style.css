@@ -174,10 +174,11 @@ footer nav .h4{
 .netContainer{
   margin-top: 3vh;
 }
-.netContainer a ion-icon{
+.netContainer a{
   font-size: 2.6em;
   margin-right: 0.5em;
 }
+/* Mobile */
 @media screen and (max-width: 480px) {
   .desktopNavContainer{
     display: none;
@@ -191,32 +192,112 @@ footer nav .h4{
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
   }
+  .searchContent h1 span{
+    display: none;
+  }
+  .searchContent h1::after{
+    content: "Solicitar turno";
+  }
 }
+/* Tablet */
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .mobileNavContainer{
     display: none;
   }
   .logo{
-    margin-left: 1em;
+    margin-left: 3%;
+    margin-top: 1.6vh;
     transform: scale(1.1);
+  }
+  .navMenu{
+    margin-top: 2vh;
   }
   .btn{
     padding-left: 1em;
     padding-right: 1em;
   }
+  .searchImgContainer{
+    display: none;
+  }
+  #searchMenu{
+    height: 80vh;
+  }
+  .searchContent{
+    top: 20vh;
+  }
+
+  .searchContent h1 span{
+    display: none;
+  }
+  .searchContent h1::after{
+    content: "Solicitar turno";
+  }
+  .cityButtonContainer{
+    margin-top: 1vh;
+  }
+  .searchButton{
+    margin-top: 2vh;
+  }
 }
+/* Small Screen Laptop */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .mobileNavContainer{
     display: none;
   }
+  .logo{
+    margin-left: 4%;
+    margin-top: 2vh;
+  }
+  #searchMenu{
+    height: 55vh;
+  }
+  .searchContent{
+    top: 20vh;
+  }
+  .cityButtonContainer{
+    margin-top: 1vh;
+  }
+  .searchButton{
+    margin-top: 2vh;
+  }
 }
+/* Desktop */
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
   .mobileNavContainer{
     display: none;
   }
 }
-@media screen and (min-width: 1201px) {
+/* Large Screen */
+@media screen and (min-width: 1201px) and (max-width: 1900px){
   .mobileNavContainer{
     display: none;
+  }
+  header{
+    height: 15vh;
+  }
+  .logo{
+    margin-top: 1.6vh;
+    transform: scale(1.1);
+  }
+  .navMenu{
+    margin-top: 2vh;
+  }
+}
+@media screen and (min-width: 1901px){
+  .mobileNavContainer{
+    display: none;
+  }
+  header{
+    height: 15vh;
+  }
+  .logo{
+    margin-top: 1.6vh;
+    transform: scale(1.1);
+  }
+  .navMenu{
+    margin-top: 2vh;
+  }
+  .netContainer{
+
   }
 }
