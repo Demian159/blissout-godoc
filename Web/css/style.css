@@ -10,7 +10,9 @@ violeta oscuro #573CBA
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+}
+.container-fluid{
+  padding: 0;
 }
 a {
   text-decoration: none;
@@ -71,8 +73,11 @@ header .btn-outline-secondary{
 }
 .btn-success:hover{
   color: #7E4FFF;
-  background-color: #7BF4D9;
+  background-color: #2ed9b3;
   border-color: #7E4FFF;
+}
+.dropdown-menu{
+  width: 93%;
 }
 #index h2{
   margin-top: 15vh;
@@ -120,10 +125,6 @@ header .btn-outline-secondary{
 .dropdown-toggle::after {
     display: none;
 }
-.backgroundSearchMenu{
-  z-index: -2;
-  position: absolute;
-}
 #howItWorks{
   height: 72.2vh;
 }
@@ -169,4 +170,53 @@ footer nav a{
 }
 footer nav .h4{
   margin-bottom: 3vh;
+}
+.netContainer{
+  margin-top: 3vh;
+}
+.netContainer a ion-icon{
+  font-size: 2.6em;
+  margin-right: 0.5em;
+}
+@media screen and (max-width: 480px) {
+  .desktopNavContainer{
+    display: none;
+  }
+  header{
+    height: 18vh;
+  }
+  .mobileNav{
+    background-color: #fff;
+    border-radius: solid 1px gray;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .mobileNavContainer{
+    display: none;
+  }
+  .logo{
+    margin-left: 1em;
+    transform: scale(1.1);
+  }
+  .btn{
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .mobileNavContainer{
+    display: none;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .mobileNavContainer{
+    display: none;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .mobileNavContainer{
+    display: none;
+  }
 }
