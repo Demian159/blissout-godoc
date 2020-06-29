@@ -38,6 +38,7 @@ header{
   z-index: 2;
 }
 header .navMenu nav a{
+  margin-right: 1em;
   font-weight: 500;
 }
 header .navMenu nav a:nth-child(2){
@@ -178,6 +179,57 @@ footer nav .h4{
   font-size: 2.6em;
   margin-right: 0.5em;
 }
+.middleHr{
+  display: block;
+  height: 1px;
+  border: 0;
+  width: 43%;
+  margin: 0 auto;
+  padding: 0;
+  border-top: 1px solid LightGray;
+}
+.main p a{
+  text-decoration: underline;
+}
+.loginFormContainer{
+  width: 20%;
+}
+.loginFormContainer input{
+  padding: 1em 0.5em;
+}
+.loginFormContainer input::placeholder{
+  color: #573CBA;
+}
+.loginFormContainer label{
+  font-size: 1.3em;
+}
+
+.loginFormContainer input[type=date] {
+    color: #573CBA;
+    opacity: 50%;
+    border-radius: 5px;
+    padding-left: 3%;
+}
+.loginFormContainer .submitUser{
+  padding: 0.8em 0;
+}
+.automaticLoginContainer{
+  width: 20%;
+}
+.automaticLoginContainer a{
+  width: 100%;
+  padding: 0.8em 0;
+}
+.mainSearch .professionalCard{
+  border: 1px dashed red;
+  width: 100%;
+  height: 45vh;
+
+}
+.mapSearchMenu{
+  height: 15vh;
+  border: 1px solid LightGray;
+}
 /* Mobile */
 @media screen and (max-width: 480px) {
   .desktopNavContainer{
@@ -198,11 +250,23 @@ footer nav .h4{
   .searchContent h1::after{
     content: "Solicitar turno";
   }
+  .loginFormContainer{
+    width:  80%;
+  }
+  .automaticLoginContainer{
+    width: 80%;
+  }
+  .mainSingUp2 h1{
+    margin-left: 1em;
+  }
 }
 /* Tablet */
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .mobileNavContainer{
     display: none;
+  }
+  header .navMenu nav a{
+    margin-right: 0;
   }
   .logo{
     margin-left: 3%;
@@ -238,11 +302,20 @@ footer nav .h4{
   .searchButton{
     margin-top: 2vh;
   }
+  .loginFormContainer{
+    width:  50%;
+  }
+  .automaticLoginContainer{
+    width: 50%;
+  }
 }
 /* Small Screen Laptop */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .mobileNavContainer{
     display: none;
+  }
+  header .navMenu nav a{
+    margin-right: 0;
   }
   .logo{
     margin-left: 4%;
@@ -259,6 +332,12 @@ footer nav .h4{
   }
   .searchButton{
     margin-top: 2vh;
+  }
+  .loginFormContainer{
+    width:  50%;
+  }
+  .automaticLoginContainer{
+    width: 50%;
   }
 }
 /* Desktop */
