@@ -231,6 +231,42 @@ footer nav .h4{
   height: 15vh;
   border: 1px solid LightGray;
 }
+.mapSearchMenu .btn{
+  padding-right: 0.5em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+
+}
+.mapSearchMenu .btn-outline-secondary{
+  color: #7E4FFF80;
+  background-color: #fff;
+  border-color: LightGray;
+  padding-left: 0.5em;
+}
+.mapSearchMenu .btn-outline-secondary:hover{
+  color: #fff;
+  background-color: #7E4FFF;
+  border-color: #7E4FFF;
+}
+
+.mapSearchMenu .btn-outline-secondary ion-icon{
+  color: #2ed9b3;
+  font-size: 1.8em;
+  padding-left: 2em;
+  padding-right: 0;
+}
+.mapSearchMenu .extraFilters strong{
+  color: #7E4FFF;
+}
+.mapSearchMenu .extraFilters strong:hover{
+  color: #fff;
+}
+.mapSearchMenu .toggleMapContainer .custom-control-label::before ,.custom-control-label::after{
+  transform: scale(1.5);
+}
+.mapSearchMenu .toggleMapContainer #customSwitch1{
+  background-color: #2ed9b3;
+}
 /* Mobile */
 @media screen and (max-width: 480px) {
   .desktopNavContainer{
