@@ -1,0 +1,8 @@
+/* NOTAS
+COLORES:
+blanco oscuro #fafaf9
+violeta claro #7E4FFF
+verde logo #7BF4D9
+verde buscar #2ed9b3
+violeta oscuro #573CBA
+*/
