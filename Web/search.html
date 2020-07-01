@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="css/style.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
   <title></title>
 </head>
 
@@ -16,7 +16,7 @@
     <header>
       <div class="desktopNavContainer row align-items-center justify-content-between">
         <div class="col-2 offset-lg-1 logo">
-          <a href="#"><img src="http://placehold.it/100x100" alt="" class="img-fluid"></a>
+          <a href="#"><img src="resources/assets/logo.svg" alt="" class="img-fluid"></a>
         </div>
         <div class="col-auto mr-lg-5 navMenu">
           <nav class="mr-md-5">
@@ -29,7 +29,7 @@
       </div>
       <div class="mobileNavContainer ">
         <nav class="navbar navbar-light">
-          <a href="#"><img src="http://placehold.it/100x100" alt="" class="img-fluid"></a>
+          <a href="#"><img src="resources/assets/logo.svg" alt="" class="img-fluid"></a>
           <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#mobileNavToggleContent" aria-controls="mobileNavToggleContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -48,7 +48,7 @@
     <main class="mainSearch">
       <section class="mapSearchMenu">
         <div class="row mapSearchMenuContainer mt-3 align-items-center">
-          <div class="offset-1 col-auto">
+          <div class="specialityButtonContainer mapSearchMenuElement col-auto">
             <label for="specialityButton">Especialidad</label><br>
             <button class="dropdownButton btn btn-outline-secondary dropdown-toggle d-flex align-items-center justify-content-between" type="button" id="specialityButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <span>ej. Odontólogo</span>
@@ -60,7 +60,7 @@
               <a class="dropdown-item" href="#">Dentista</a>
             </div>
           </div>
-          <div class="col-auto cityButtonContainer">
+          <div class="col-auto cityButtonContainer mapSearchMenuElement">
             <label for="cityButton">Ciudad</label><br>
             <button class="dropdownButton btn btn-outline-secondary dropdown-toggle d-flex align-items-center justify-content-between" type="button" id="cityButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <span>ej. Buenos Aires</span>
@@ -72,89 +72,233 @@
               <a class="dropdown-item" href="#">Cordoba</a>
             </div>
           </div>
-          <div class="col-auto">
+          <div class="col-auto mapSearchMenuElement">
             <label for="pathologyButton">Patología</label><br>
             <button class="dropdownButton btn btn-outline-secondary dropdown-toggle d-flex align-items-center justify-content-between" type="button" id="pathologyButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span>ej. Odontólogo</span>
+              <span>ej. Diabetes</span>
               <ion-icon name="chevron-down-outline"></ion-icon>
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Odontologo</a>
-              <a class="dropdown-item" href="#">Pediatra</a>
-              <a class="dropdown-item" href="#">Dentista</a>
+              <a class="dropdown-item" href="#">Diabetes</a>
+              <a class="dropdown-item" href="#">Asma</a>
+              <a class="dropdown-item" href="#">Caries</a>
             </div>
           </div>
-          <div class="col-auto">
+          <div class="col-auto mapSearchMenuElement">
             <label for="serviceButton">Servicio</label><br>
             <button class="dropdownButton btn btn-outline-secondary dropdown-toggle d-flex align-items-center justify-content-between" type="button" id="serviceButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span>ej. Odontólogo</span>
+              <span>ej. Servicio A</span>
               <ion-icon name="chevron-down-outline"></ion-icon>
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Odontologo</a>
-              <a class="dropdown-item" href="#">Pediatra</a>
-              <a class="dropdown-item" href="#">Dentista</a>
+              <a class="dropdown-item" href="#">Servicio A</a>
+              <a class="dropdown-item" href="#">Servicio B</a>
+              <a class="dropdown-item" href="#">Servicio C</a>
             </div>
           </div>
-          <div class="col-auto">
-            <label for="healthCareButton">Obra Social, prepaga</label><br>
+          <div class="col-auto mapSearchMenuElement">
+            <label for="healthCareButton">Obra Social</label><br>
             <button class="dropdownButton btn btn-outline-secondary dropdown-toggle d-flex align-items-center justify-content-between" type="button" id="healthCareButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span>ej. Odontólogo</span>
+              <span>ej. Osde</span>
               <ion-icon name="chevron-down-outline"></ion-icon>
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Odontologo</a>
-              <a class="dropdown-item" href="#">Pediatra</a>
-              <a class="dropdown-item" href="#">Dentista</a>
+              <a class="dropdown-item" href="#">Osde</a>
+              <a class="dropdown-item" href="#">Medife</a>
+              <a class="dropdown-item" href="#">Osmed</a>
             </div>
           </div>
           <div class="extraFiltersContainer col-auto align-items-center">
-            <button style="margin-top:2em;"type="button" name="button" class="extraFilters btn btn-outline-secondary"><strong>Más Filtros</strong></button>
+            <button style="margin-top:2em;" type="button" name="button" class="extraFilters btn btn-outline-secondary"><strong>Más Filtros</strong></button>
           </div>
-          <div class="col-auto toggleMapContainer d-flex flex-column align-items-center ">
-            <label for="toggleMap">Ver Mapa</label>
-            <div class="custom-control custom-switch">
-              <input type="checkbox" class="custom-control-input" id="customSwitch1">
-              <label class="custom-control-label" for="customSwitch1"></label>
-            </div>
+          <div class="col-auto toggleMapContainer d-flex flex-column align-items-center mt-4">
+              <label>Ver Mapa</label>
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
           </div>
-
+        </div>
+        <!-- Mobile Map Search Menu -->
+        <div class="mapMobileSearchMenuContainer ">
+          <nav class="navbar navbar-light">
+            <button class="navbar-toggler ml-auto mr-auto" type="button" data-toggle="collapse" data-target="#mapMobileSearchMenuToggleContent" aria-controls="mobileNavToggleContent" aria-expanded="false" aria-label="Toggle navigation">
+              <ion-icon name="search-circle-outline" size="large"></ion-icon>
+            </button>
+          </nav>
+          <div class="collapse" id="mapMobileSearchMenuToggleContent">
+            <nav class="mobileNav d-flex flex-column align-items-center">
+              <div class="specialityButtonContainer mapSearchMenuElement col-auto">
+                <label for="specialityButton">Especialidad</label><br>
+                <button class="dropdownButton btn btn-outline-secondary dropdown-toggle d-flex align-items-center justify-content-between" type="button" id="specialityButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span>ej. Odontólogo</span>
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Odontologo</a>
+                  <a class="dropdown-item" href="#">Pediatra</a>
+                  <a class="dropdown-item" href="#">Dentista</a>
+                </div>
+              </div>
+              <div class="col-auto cityButtonContainer mapSearchMenuElement">
+                <label for="cityButton">Ciudad</label><br>
+                <button class="dropdownButton btn btn-outline-secondary dropdown-toggle d-flex align-items-center justify-content-between" type="button" id="cityButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span>ej. Buenos Aires</span>
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Mendoza</a>
+                  <a class="dropdown-item" href="#">Buenos Aires</a>
+                  <a class="dropdown-item" href="#">Cordoba</a>
+                </div>
+              </div>
+              <div class="col-auto mapSearchMenuElement">
+                <label for="pathologyButton">Patología</label><br>
+                <button class="dropdownButton btn btn-outline-secondary dropdown-toggle d-flex align-items-center justify-content-between" type="button" id="pathologyButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span>ej. Diabetes</span>
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Diabetes</a>
+                  <a class="dropdown-item" href="#">Asma</a>
+                  <a class="dropdown-item" href="#">Caries</a>
+                </div>
+              </div>
+              <div class="col-auto mapSearchMenuElement">
+                <label for="serviceButton">Servicio</label><br>
+                <button class="dropdownButton btn btn-outline-secondary dropdown-toggle d-flex align-items-center justify-content-between" type="button" id="serviceButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span>ej. Servicio A</span>
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Servicio A</a>
+                  <a class="dropdown-item" href="#">Servicio B</a>
+                  <a class="dropdown-item" href="#">Servicio C</a>
+                </div>
+              </div>
+              <div class="col-auto mapSearchMenuElement">
+                <label for="healthCareButton">Obra Social</label><br>
+                <button class="dropdownButton btn btn-outline-secondary dropdown-toggle d-flex align-items-center justify-content-between" type="button" id="healthCareButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span>ej. Osde</span>
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Osde</a>
+                  <a class="dropdown-item" href="#">Medife</a>
+                  <a class="dropdown-item" href="#">Osmed</a>
+                </div>
+              </div>
+              <div class="extraFiltersContainer col-auto align-items-center">
+                <button style="margin-top:2em;" type="button" name="button" class="extraFilters btn btn-outline-secondary"><strong>Más Filtros</strong></button>
+              </div>
+            </nav>
+          </div>
         </div>
       </section>
       <section class="row">
-        <section class="offset-1 col-6">
+        <section class="professionalAside">
           <p class="mt-5 mb-5">Resultados para "Odontólogos, Mendoza"</p>
-          <article class="professionalCard">
-            <div class="upperCardSection">
+          <article class="professionalCard mt-5">
+            <div class="upperCardSection row px-4 py-4">
               <div class="professionalImgContainer">
-                <img src="" alt="">
+                <div class="professionalImgContainerInner">
+                    <img src="resources/img/9950e31429e790c5168c5d73a81e5340" alt="" class="img-fluid">
+                </div>
               </div>
               <div class="professionalTextContainer">
-                <h4 class="h4"></h4>
-                <h2 class="h2"></h2>
-                <h6 class="h6"></h6>
-                <p></p>
+                <h5 class="h5">Dra. Susana De La Rosa</h4>
+                <h4 class="h4">Odontología</h2>
+                <h6 class="h6">Núm. Colegiado:  122340</h6>
+                <p class="">Odontólogo (Implantes Odontológicos, Cirugía Odontológica, Blanqueamiento Dental)</p>
               </div>
-              <div class="qualificationContainer">
-                <!-- star icon -->
-                <h2 class="h2"></h2>
-                <p></p>
+              <div class="qualificationContainer d-flex flex-column ml-auto pr-0">
+                <div class="noteContainer d-flex align-self-end">
+                  <ion-icon class="mr-2 "name="star"></ion-icon>
+                  <h5 class="h5 mr-2 mt-1">4.2</h2>
+                  <p class="">(173)</p>
+                </div>
               </div>
             </div>
-            <div class="lowerCardSection">
-
+            <div class="lowerCardSection px-4 py-4 d-flex align-items-center">
+              <a class="btn btn-dark" href="#">Solicitar turno</a>
             </div>
           </article>
-          <article class="">
-
+          <article class="professionalCard mt-5">
+            <div class="upperCardSection row px-4 py-4">
+              <div class="professionalImgContainer">
+                <div class="professionalImgContainerInner">
+                    <img src="resources/img/9950e31429e790c5168c5d73a81e5340" alt="" class="img-fluid">
+                </div>
+              </div>
+              <div class="professionalTextContainer">
+                <h5 class="h5">Dra. Susana De La Rosa</h4>
+                <h4 class="h4">Odontología</h2>
+                <h6 class="h6">Núm. Colegiado:  122340</h6>
+                <p class="">Odontólogo (Implantes Odontológicos, Cirugía Odontológica, Blanqueamiento Dental)</p>
+              </div>
+              <div class="qualificationContainer d-flex flex-column ml-auto pr-0">
+                <div class="noteContainer d-flex align-self-end">
+                  <ion-icon class="mr-2 "name="star"></ion-icon>
+                  <h5 class="h5 mr-2 mt-1">4.2</h2>
+                  <p class="">(173)</p>
+                </div>
+              </div>
+            </div>
+            <div class="lowerCardSection px-4 py-4 d-flex align-items-center justify-content-center">
+              <div class="lowerCardButtons d-flex align-items-center justify-content-center">
+                <a class="btn btn-outline-secondary d-flex" href="#"><ion-icon name="location-outline"></ion-icon><span>Consultorio(1)</span></a>
+                <a class="btn btn-outline-secondary d-flex" href="#"><ion-icon name="videocam-outline"></ion-icon><span>Videoconsulta</span></a>
+              </div>
+            </div>
           </article>
-          <article class="">
-
+          <article class="professionalCard mt-5">
+            <div class="upperCardSection row px-4 py-4">
+              <div class="professionalImgContainer">
+                <div class="professionalImgContainerInner">
+                    <img src="resources/img/9950e31429e790c5168c5d73a81e5340" alt="" class="img-fluid">
+                </div>
+              </div>
+              <div class="professionalTextContainer">
+                <h5 class="h5">Dra. Susana De La Rosa</h4>
+                <h4 class="h4">Odontología</h2>
+                <h6 class="h6">Núm. Colegiado:  122340</h6>
+                <p class="">Odontólogo (Implantes Odontológicos, Cirugía Odontológica, Blanqueamiento Dental)</p>
+              </div>
+              <div class="qualificationContainer d-flex flex-column ml-auto pr-0">
+                <div class="noteContainer d-flex align-self-end">
+                  <ion-icon class="mr-2 "name="star"></ion-icon>
+                  <h5 class="h5 mr-2 mt-1">4.2</h2>
+                  <p class="">(173)</p>
+                </div>
+              </div>
+            </div>
+            <div class="lowerCardSection px-4 py-4 d-flex align-items-center">
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th><ion-icon name="location-outline"></ion-icon><span>Consultorio 1</span></th>
+                      <th><ion-icon name="location-outline"></ion-icon><span>Consultorio 2</span></th>
+                      <th><ion-icon name="location-outline"></ion-icon><span>Consultorio 3</span></th>
+                      <th><ion-icon name="videocam-outline"></ion-icon><span>Videoconsulta</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>Peru 234, Ciudad,Mendoza</th>
+                      <th>Lunes <br> 6 abr.</th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </article>
         </section>
-        <section class="col-5">
+        <section class="map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4739.10193420486!2d-68.84376384758859!3d-32.870366995944224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1593465912582!5m2!1ses-419!2sar" width="800"
-            height="1200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            height="1900" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </section>
       </section>
     </main>
@@ -169,12 +313,14 @@
           <a href="#">Confianza y seguridad</a>
           <a href="#">Normas de la comunidad</a>
         </nav>
-        <nav class="col-2 d-flex flex-column">
-          <h4 class="h4">Servicios</h4>
-          <a href="#">Pacientes</a>
-          <a href="#">Prestadores</a>
-          <a href="#">Beneficios Premium</a>
-          <a href="#">Publicidad</a>
+        <nav class="servicesFooter col-xs-auto col-2">
+          <div class="servicesFooterContent d-flex flex-column">
+            <h4 class="h4">Servicios</h4>
+            <a href="#">Pacientes</a>
+            <a href="#">Prestadores</a>
+            <a href="#">Beneficios Premium</a>
+            <a href="#">Publicidad</a>
+          </div>
         </nav>
         <nav class="col-2 d-flex flex-column">
           <h4 class="h4">Ayuda</h4>
@@ -185,22 +331,32 @@
         </nav>
         <nav class="col-3 mr-5 row d-flex flex-column">
           <h4 class="h4">Redes</h4>
-          <div class="netContainer row">
-            <a class="col-1" href="#">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-            <a class="col-1" href="#">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-            <a class="col-1" href="#">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-            <a class="col-1" href="#">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-            <a class="col-1" href="#">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
+          <div class="netContainer row justify-content-between">
+            <div class="col-2">
+              <a href="#">
+                <img src="resources/assets/icon-tw.svg"alt="">
+              </a>
+            </div>
+            <div class="col-1">
+              <a href="#">
+                <img src="resources/assets/icon-fa.svg" alt="">
+              </a>
+            </div>
+            <div class="col-2">
+              <a href="#">
+                <img src="resources/assets/icon-insta.svg" alt="">
+              </a>
+            </div>
+            <div class="col-2">
+              <a href="#">
+                <img src="resources/assets/icon-link.svg" alt="">
+              </a>
+            </div>
+            <div class="col-2">
+              <a href="#">
+                <img src="resources/assets/icon-you.svg" alt="">
+              </a>
+            </div>
           </div>
         </nav>
       </div>

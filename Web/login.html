@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="css/style.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
   <title></title>
 </head>
 
@@ -16,7 +16,7 @@
     <header>
       <div class="desktopNavContainer row align-items-center justify-content-between">
         <div class="col-2 offset-lg-1 logo">
-          <a href="#"><img src="http://placehold.it/100x100" alt="" class="img-fluid"></a>
+          <a href="#"><img src="resources/assets/logo.svg" alt="" class="img-fluid"></a>
         </div>
         <div class="col-auto mr-lg-5 navMenu">
           <nav class="mr-md-5">
@@ -29,7 +29,7 @@
       </div>
       <div class="mobileNavContainer ">
         <nav class="navbar navbar-light">
-          <a href="#"><img src="http://placehold.it/100x100" alt="" class="img-fluid"></a>
+          <a href="#"><img src="resources/assets/logo.svg" alt="" class="img-fluid"></a>
           <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#mobileNavToggleContent" aria-controls="mobileNavToggleContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -79,12 +79,14 @@
           <a href="#">Confianza y seguridad</a>
           <a href="#">Normas de la comunidad</a>
         </nav>
-        <nav class="col-2 d-flex flex-column">
-          <h4 class="h4">Servicios</h4>
-          <a href="#">Pacientes</a>
-          <a href="#">Prestadores</a>
-          <a href="#">Beneficios Premium</a>
-          <a href="#">Publicidad</a>
+        <nav class="servicesFooter col-xs-auto col-2">
+          <div class="servicesFooterContent d-flex flex-column">
+            <h4 class="h4">Servicios</h4>
+            <a href="#">Pacientes</a>
+            <a href="#">Prestadores</a>
+            <a href="#">Beneficios Premium</a>
+            <a href="#">Publicidad</a>
+          </div>
         </nav>
         <nav class="col-2 d-flex flex-column">
           <h4 class="h4">Ayuda</h4>
@@ -95,22 +97,32 @@
         </nav>
         <nav class="col-3 mr-5 row d-flex flex-column">
           <h4 class="h4">Redes</h4>
-          <div class="netContainer row">
-            <a class="col-1"href="#">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-            <a class="col-1"href="#">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-            <a class="col-1"href="#">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-            <a class="col-1"href="#">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-            <a class="col-1"href="#">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
+          <div class="netContainer row justify-content-between">
+            <div class="col-2">
+              <a href="#">
+                <img src="resources/assets/icon-tw.svg"alt="">
+              </a>
+            </div>
+            <div class="col-1">
+              <a href="#">
+                <img src="resources/assets/icon-fa.svg" alt="">
+              </a>
+            </div>
+            <div class="col-2">
+              <a href="#">
+                <img src="resources/assets/icon-insta.svg" alt="">
+              </a>
+            </div>
+            <div class="col-2">
+              <a href="#">
+                <img src="resources/assets/icon-link.svg" alt="">
+              </a>
+            </div>
+            <div class="col-2">
+              <a href="#">
+                <img src="resources/assets/icon-you.svg" alt="">
+              </a>
+            </div>
           </div>
         </nav>
       </div>
